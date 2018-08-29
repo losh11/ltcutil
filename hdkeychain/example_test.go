@@ -100,7 +100,7 @@ func Example_defaultWalletLayout() {
 
 	// Derive the 10th extended key for the account 0 external chain.  This
 	// gives the path:
-	//   m/0H/0/10
+	//   m/0'/0/10
 	acct0Ext10, err := acct0Ext.Child(10)
 	if err != nil {
 		fmt.Println(err)
@@ -109,7 +109,7 @@ func Example_defaultWalletLayout() {
 
 	// Derive the 1st extended key for the account 0 internal chain.  This
 	// gives the path:
-	//   m/0H/1/0
+	//   m/0'/1/0
 	acct0Int0, err := acct0Int.Child(0)
 	if err != nil {
 		fmt.Println(err)
@@ -132,8 +132,8 @@ func Example_defaultWalletLayout() {
 	fmt.Println("Account 0 Internal Address 0:", acct0IntAddr)
 
 	// Output:
-	// Account 0 External Address 10: 1HVccubUT8iKTapMJ5AnNA4sLRN27xzQ4F
-	// Account 0 Internal Address 0: 1J5rebbkQaunJTUoNVREDbeB49DqMNFFXk
+	// Account 0 External Address 10: LbiZt7uJXnxNiPWWUDA5eB8dYdjJGDsM7k
+	// Account 0 Internal Address 0: LcJououaVF9qZGAxYdQXVchwGMb7TzTtbn
 }
 
 // This example demonstrates the audits use case in BIP0032.
